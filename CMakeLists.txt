@@ -40,7 +40,10 @@ include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
 set(PROJECT cpp_redis)
 project(${PROJECT} CXX)
 
+LINK_DIRECTORIES(${CMAKE_SOURCE_DIR}/lib)
 
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
+SET(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
 ###
 # compilation options
 ###
